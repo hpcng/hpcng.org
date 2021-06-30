@@ -35,8 +35,8 @@ function Header({ siteTitle }) {
             <li>
               <Link
                 to="/help"
-                aria-label="Our product"
-                title="Our product"
+                aria-label="Help"
+                title="Help"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
               >
                 Getting Help
@@ -44,9 +44,9 @@ function Header({ siteTitle }) {
             </li>
             <li>
               <Link
-                to="/"
-                aria-label="Product pricing"
-                title="Product pricing"
+                to="/news"
+                aria-label="News"
+                title="News"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
               >
                 News
@@ -65,8 +65,8 @@ function Header({ siteTitle }) {
             <li>
               <Link
                 to="/"
-                aria-label="About us"
-                title="About us"
+                aria-label="Talks"
+                title="Talks"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
               >
                 Talks
