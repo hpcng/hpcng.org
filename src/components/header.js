@@ -24,7 +24,7 @@ function Header({ siteTitle }) {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
-                to="/"
+                to="/docs"
                 aria-label="Documentation"
                 title="Documentation"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
@@ -54,9 +54,9 @@ function Header({ siteTitle }) {
             </li>
             <li>
               <Link
-                to="/"
-                aria-label="About us"
-                title="About us"
+                to="/usecases"
+                aria-label="Use Cases"
+                title="Use Cases"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
               >
                 Use Cases
@@ -64,7 +64,7 @@ function Header({ siteTitle }) {
             </li>
             <li>
               <Link
-                to="/"
+                to="/talks"
                 aria-label="Talks"
                 title="Talks"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
