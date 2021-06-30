@@ -5,7 +5,7 @@ const PostLink = ({ post }) => (
   <div>
     <ul className="mb-2">
       <li
-        className="relative bg-gray-100 rounded-lg py-5 px-4 hover:bg-gray-200 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600"
+        className="relative bg-gray-100 rounded-lg py-5 px-4 hover:bg-gray-200 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-600"
       >
         <div className="flex justify-between space-x-3">
           <div className="min-w-0 flex-1">
