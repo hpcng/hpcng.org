@@ -1,5 +1,5 @@
 <h1 align="center">
-  Warewulf Website (WIP)
+  HPCng Website (WIP)
 </h1>
 
 ## 🚀 Quick start
