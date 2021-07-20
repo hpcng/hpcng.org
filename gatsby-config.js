@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://warewulf.hpcng.org`,
-    title: `Warewulf`,
-    description: `A stateless and diskless container operating system provisioning system for large clusters of bare metal and/or virtual systems.`,
+    siteUrl: `https://hpcng.org`,
+    title: `HPCng`,
+    description: `The Next Generation of High Performance Computing`,
     author: `@ressonix`,
   },
   plugins: [
