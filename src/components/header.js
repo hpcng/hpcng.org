@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import Logo from "../images/logo.png"
 
 function Header({ siteTitle }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -19,6 +19,16 @@ function Header({ siteTitle }) {
             <img className="h-10" src={Logo} />
           </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
+            <li>
+              <Link
+                to="/about"
+                aria-label="About"
+                title="About"
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+              >
+                About
+              </Link>
+            </li>
             <li>
               <Link
                 to="/news"
@@ -86,34 +96,17 @@ function Header({ siteTitle }) {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full">
+            <div className="absolute top-0 left-0 w-full z-10">
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <a
                       href="/"
-                      aria-label="Company"
-                      title="Company"
+                      aria-label="HPCng"
+                      title="HPCng"
                       className="inline-flex items-center"
                     >
-                      <svg
-                        className="w-8 text-green-500"
-                        viewBox="0 0 24 24"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        stroke="currentColor"
-                        fill="none"
-                      >
-                        <rect x="3" y="1" width="7" height="12" />
-                        <rect x="3" y="17" width="7" height="6" />
-                        <rect x="14" y="1" width="7" height="6" />
-                        <rect x="14" y="11" width="7" height="12" />
-                      </svg>
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
-                      </span>
+                      <img className="h-8" src={Logo} />
                     </a>
                   </div>
                   <div>
@@ -135,64 +128,54 @@ function Header({ siteTitle }) {
                 <nav>
                   <ul className="space-y-4">
                     <li>
-                      <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
+                      <Link
+                        to="/about"
+                        aria-label="About"
+                        title="About"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
                       >
-                        Product
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/news"
+                        aria-label="News"
+                        title="News"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+                      >
+                        News
+                      </Link>
+                    </li>
+                    <li>
+                      <a
+                        href="https://warewulf.hpcng.org"
+                        aria-label="Warewulf"
+                        title="Warewulf"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+                      >
+                        Warewulf
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
+                        href="https://singularity.hpcng.org"
+                        aria-label="Singularity"
+                        title="Singularity"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
                       >
-                        Features
+                        Singularity
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+                      <Link
+                        to="/get-involved"
+                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-900 hover:bg-green-700 focus:shadow-outline focus:outline-none"
+                        aria-label="Get Involved"
+                        title="Get Involved"
                       >
-                        Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="About us"
-                        title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
-                      >
-                        About us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Sign in"
-                        title="Sign in"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
-                      >
-                        Sign in
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-600 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
-                      >
-                        Sign up
-                      </a>
+                        Get Involved
+                      </Link>
                     </li>
                   </ul>
                 </nav>
