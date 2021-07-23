@@ -1,61 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import { NewspaperIcon, DownloadIcon, SupportIcon, ArrowsExpandIcon, LockClosedIcon, BadgeCheckIcon } from '@heroicons/react/outline'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import logo from "../images/logo.png"
 
-const features = [
-  {
-    name: 'Feature 1 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 2 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 3 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 4 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 5 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 6 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 7 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 8 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-  {
-    name: 'Feature 9 Here',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus interdum velit interdum bibendum. Vestibulum massa nulla, efficitur a ultrices eget, auctor quis elit. Curabitur dapibus tellus congue porttitor facilisis. In ac vehicula sapien. Sed eu pretium ligula, id condimentum augue. Cras ultricies lacinia rutrum. Aliquam erat volutpat. Nunc vulputate ante sem, eu suscipit ante imperdiet sed. Proin pharetra vel dui sed tristique. Ut varius ultricies elementum.',
-  },
-]
-
+import WarewulfLogo from "../images/warewulf.png"
+import SingularityLogo from "../images/singularity.png"
 
 const IndexPage = () => (
   <Layout>
@@ -82,11 +32,14 @@ const IndexPage = () => (
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
               The Next Generation of
               <span className="inline-block text-green-900">
-              High Performance Computing
-            </span>
+                High Performance Computing
+              </span>
             </h2>
             <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-              HPCng is an open community of people and organizations interested in the broad modernization of HPC capabilities across a wide range of use-cases ranging from traditional HPC to enterprise and hyper-scale workloads.
+              HPCng is an open community of people and organizations interested
+              in the broad modernization of HPC capabilities across a wide range
+              of use-cases ranging from traditional HPC to enterprise and
+              hyper-scale workloads.
             </p>
             <div className="flex items-center">
               <Link
@@ -106,13 +59,22 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-
-      
-
-
     </div>
-
-
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <p className="text-center text-4xl font-bold">Our Projects</p>
+        <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-2 lg:mt-8">
+          <div className="col-span-1 flex justify-center items-center py-8 px-8 bg-gray-50 rounded-md">
+            <img className="max-h-20" src={WarewulfLogo} alt="Warewulf" />
+            <p className="ml-4 text-2xl font-bold uppercase">Warewulf</p>
+          </div>
+          <div className="col-span-1 flex justify-center items-center py-8 px-8 bg-gray-50 rounded-md">
+            <img className="max-h-20" src={SingularityLogo} alt="Singularity" />
+            <p className="ml-4 text-2xl font-bold uppercase">Singularity</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 
