@@ -39,7 +39,7 @@ const AboutPage = () => (
               <div className="prose prose-green prose-lg text-gray-500 lg:max-w-none">
                 <h1>Community Charter</h1>
                 <p>
-                  The initial <a href=https://github.com/hpcng/community-charter/blob/main/README.md>Community Charter</a> is available and hosted on github.  Please read it and submit issues or pull requests if you have ideas for improvements.
+                  The initial <a href="https://github.com/hpcng/community-charter/blob/main/README.md">Community Charter</a> is available and hosted on github.  Please read it and submit issues or pull requests if you have ideas for improvements.
                 </p>
               </div>
             </div>
