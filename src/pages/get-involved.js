@@ -15,7 +15,7 @@ const supportLinks = [
   },
   {
     name: 'Slack',
-    href: 'https://join.slack.com/t/hpcng/shared_invite/zt-1vc7jlhr6-kqCvLnFX8cq2Ar8JhL~MEw',
+    href: 'https://join.slack.com/t/hpcng/shared_invite/zt-qda4h1ls-OP0Uouq6sSmVE6i_0NrWdw',
     description:
       'Questions? Feel free to reach out to our knowledgeable and friendly Slack community, who\'s always willing to help.',
     icon: FaSlack,
